@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Wings.js Demo</title>
+	  <link rel="stylesheet" type="text/css" href="demo.css" />
+
+	  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	  <script src="wings-min.js"></script>
+	</head>
+	<body>
+	<h1>Wings.js Demo Page</h1>
+
+	<p>The H1 tag is unique in this page</p>
+		
+	<pre>&lt;script&gt;
+	jQuery(document).ready(function($) {
+          
+		$('h1').wings();
+          
+	});
+&lt;/script&gt;</pre>
+
+
+	
+	<div class="container">
+		<h2>A heading</h2>
+	</div>
+	<h2 class="orangeBg">Another Heading</h2>
+	<div class="container2">
+		<h2 class="purpleBg">A Third Heading</h2>
+	</div>
+	<p>There are three H2 tags which are selected together. These are all evaluated separately to give the correct colour wings for each one.</p>
+
+	<pre>&lt;script&gt;
+	jQuery(document).ready(function($) {
+          
+		$('h2').wings();
+          
+	});
+&lt;/script&gt;</pre>
+	
+
+	
+
+
+	
+	  
+	
+
+
+	<script>
+	  jQuery(document).ready(function($) {
+          
+          $('h1').wings();
+          $('h2').wings();
+          
+        });
+	</script>
+	</body>
+	</html>

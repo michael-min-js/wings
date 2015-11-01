@@ -2,7 +2,7 @@
 A jQuery plugin that adds wings to a header.
 Wings are small triangles shaded darker than the header background that make it appear to wrap aroud like a ribbon in 3d.
 
-Usage:
+### Usage
 
 Load the .js file as a script
 ```html
@@ -43,3 +43,7 @@ Alternitavely you can pass in an array of many objects *however* v0.1 will calcu
         });
 </script>
 ```
+
+### Upcoming Features
+*Calculate colours each time to work better with multiple objects
+*Error Checking

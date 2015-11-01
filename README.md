@@ -2,6 +2,11 @@
 A jQuery plugin that adds wings to a header.
 Wings are small triangles shaded darker than the header background that make it appear to wrap aroud like a ribbon in 3d.
 
+Author: Michael James
+URL: michaeljames.io
+Version: 0.1
+
+
 ### Usage
 
 Load the .js file as a script

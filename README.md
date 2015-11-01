@@ -11,8 +11,9 @@ Version: 0.1
 
 ### Usage
 
-Load the .js file as a script
+Load the .js file as a script along with jQuery
 ```html
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="js/wings.min.js"></script>
 ```
 

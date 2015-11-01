@@ -21,7 +21,7 @@ Call the wings method on $(your object)
 ```
 
 ### Multiple Headings
-You can call this method on as many headings as you like
+You can call this method on as many objects as you like
 ```html
 <script>
 	jQuery(document).ready(function($) {
@@ -33,7 +33,7 @@ You can call this method on as many headings as you like
 </script>
 ```
 
-Alternitavely you can pass in an array of many items *however* v0.1 will calculate the colour once from the first item so this should only be used where items have the same background colour.
+Alternitavely you can pass in an array of many objects *however* v0.1 will calculate the colour once from the first item so this should only be used where objects have the same background colour.
 ```html
 <script>
 	jQuery(document).ready(function($) {

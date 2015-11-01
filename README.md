@@ -1,2 +1,2 @@
 # wings.js
-A javascript plugin to add wings to a header
+A jQuery plugin that adds wings to a header

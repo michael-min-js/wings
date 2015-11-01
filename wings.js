@@ -65,7 +65,7 @@
 				rig = pos.left+wid+pRight+pLeft-h,
 				
 
-				colour = blend(-0.5, $obj.css('background-color')),
+				colour = blend(-0.42, $obj.css('background-color')),
 				sharedCSS = {
 					'width': 0,
 					'height': 0,

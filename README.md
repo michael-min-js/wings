@@ -1,5 +1,6 @@
 # wings.js
-A jQuery plugin that adds wings to a header
+A jQuery plugin that adds wings to a header.
+Wings are small triangles shaded darker than the header background that make it appear to wrap aroud like a ribbon in 3d.
 
 Usage:
 
@@ -17,4 +18,28 @@ Call the wings method on $(your object)
           
         });
 	</script>
-	```
+```
+
+### Multiple Headings
+You can call this method on as many headings as you like
+```html
+<script>
+	  jQuery(document).ready(function($) {
+          
+          $('#myHeading1').wings();
+          $('#myHeading2').wings();
+          
+        });
+	</script>
+```
+
+Alternitavely you can pass in an array of many items *however* v0.1 will calculate the colour once from the first item so this should only be used where items have the same background colour.
+```html
+<script>
+	  jQuery(document).ready(function($) {
+          
+          $('h2').wings();
+   
+        });
+	</script>
+```

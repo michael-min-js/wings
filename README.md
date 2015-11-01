@@ -45,5 +45,5 @@ Alternitavely you can pass in an array of many objects *however* v0.1 will calcu
 ```
 
 ### Upcoming Features
-*Calculate colours each time to work better with multiple objects
-*Error Checking
+* Calculate colours each time to work better with multiple objects
+* Error Checking

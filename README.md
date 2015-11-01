@@ -8,7 +8,7 @@ Author: Michael James
 
 URL: michaeljames.io
 
-Version: 0.1
+Version: 0.2
 
 
 ### Usage

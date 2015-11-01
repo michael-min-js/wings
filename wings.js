@@ -2,6 +2,13 @@
 
     "use strict";
 
+  
+    //redraw every resize
+    $( window ).resize(function() {
+    	$('.wings-js-wing').remove();
+	  	$('.wings-js-heading').wings();
+	});
+
     $.fn.wings = function() {
     	
     	// blend function developed by Pimp Trizkit
@@ -24,13 +31,17 @@
 			return noPx;
 		}
 
+		
+
 		for (var i = 0, len = this.length; i < len; i++) {
 
 			var $obj = $(this[i]);
-
+			
+			$obj.addClass('wings-js-heading');
 			$obj.css('position', 'relative');
 
 			var	idString = $obj.attr('id'),
+
 
 				
 				l = document.createElement('div'),
@@ -71,14 +82,14 @@
 			
 			
 
-			$(l).css(sharedCSS).css({
+			$(l).addClass('wings-js-wing').css(sharedCSS).css({
 				'border-color': 'transparent '+colour+' transparent transparent',
 				'border-width': '0 '+h+'px '+h+'px 0',	
 				'left': lef 
 			});
 
 
-			$(r).css(sharedCSS).css({
+			$(r).addClass('wings-js-wing').css(sharedCSS).css({
 				'border-width': h+'px '+h+'px 0 0',
 				'border-color': colour+' transparent transparent transparent',
 				'left': rig

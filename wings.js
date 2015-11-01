@@ -19,38 +19,76 @@
 		    }
 		}
 
+		var dPx = function(strPx) {
+			var noPx = parseInt(strPx.replace('px', ''));
+			return noPx;
+		}
 
-		var $obj = $(this),
-			idString = $obj.attr('id'),
-			l = document.createElement('div'),
-			r = document.createElement('div'),
-			h = Math.round($obj.height()/2.5),
-			colour = blend(-0.5, $obj.css('background-color')),
-			sharedCSS = {
-				'width': 0,
-				'height': 0,
-				'border-style': 'solid',
-				'margin': 0,
-				'padding': 0
-			};
+		for (var i = 0, len = this.length; i < len; i++) {
 
-		
-		
+			var $obj = $(this[i]);
 
-		$(l).css(sharedCSS).css({
-			'border-color': 'transparent '+colour+' transparent transparent',
-			'border-width': '0 '+h+'px '+h+'px 0',	
-			'float': 'left'
-		});
+			$obj.css('position', 'relative');
+
+			var	idString = $obj.attr('id'),
+
+				
+				l = document.createElement('div'),
+				r = document.createElement('div'),
+				h = Math.round($obj.height()/2.5),
+
+				pos = $obj.offset(),
+				pTop = dPx($obj.css('padding-top')),
+				pBot = dPx($obj.css('padding-bottom')),
+				hei = $obj.height(),
+				wid = $obj.width(),
+
+				top = pos.top+pTop+pBot+hei,
+
+				mLeft = dPx($obj.css('margin-left')),
+				mRight = dPx($obj.css('margin-right')),
+				pLeft = dPx($obj.css('padding-left')),
+				pRight = dPx($obj.css('padding-right')),
+
+				lef = pos.left,
+				rig = pos.left+wid+pRight+pLeft-h,
+				
+
+				colour = blend(-0.5, $obj.css('background-color')),
+				sharedCSS = {
+					'width': 0,
+					'height': 0,
+					'border-style': 'solid',
+					'margin': 0,
+					'padding': 0,
+					'position': 'absolute',
+					'top': top + 'px'
+					
 
 
-		$(r).css(sharedCSS).css({
-			'border-width': h+'px '+h+'px 0 0',
-			'border-color': colour+' transparent transparent transparent',
-			'float': 'right'
-		});
+				};
 
-		$obj.after(l).after(r);
+			
+			
+
+			$(l).css(sharedCSS).css({
+				'border-color': 'transparent '+colour+' transparent transparent',
+				'border-width': '0 '+h+'px '+h+'px 0',	
+				'left': lef 
+			});
+
+
+			$(r).css(sharedCSS).css({
+				'border-width': h+'px '+h+'px 0 0',
+				'border-color': colour+' transparent transparent transparent',
+				'left': rig
+			});
+
+			$obj.after(l).after(r);
+			
+
+
+		};
 		
 
 

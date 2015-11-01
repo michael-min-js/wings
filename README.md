@@ -12,34 +12,34 @@ Load the .js file as a script
 Call the wings method on $(your object)
 ```html
 <script>
-	  jQuery(document).ready(function($) {
+	jQuery(document).ready(function($) {
           
-          $('#myHeading').wings();
+        	$('#myHeading').wings();
           
         });
-	</script>
+</script>
 ```
 
 ### Multiple Headings
 You can call this method on as many headings as you like
 ```html
 <script>
-	  jQuery(document).ready(function($) {
+	jQuery(document).ready(function($) {
           
-          $('#myHeading1').wings();
-          $('#myHeading2').wings();
+        	$('#myHeading1').wings();
+        	$('#myHeading2').wings();
           
         });
-	</script>
+</script>
 ```
 
 Alternitavely you can pass in an array of many items *however* v0.1 will calculate the colour once from the first item so this should only be used where items have the same background colour.
 ```html
 <script>
-	  jQuery(document).ready(function($) {
+	jQuery(document).ready(function($) {
           
-          $('h2').wings();
+        	$('h2').wings();
    
         });
-	</script>
+</script>
 ```

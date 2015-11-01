@@ -8,6 +8,8 @@ URL: michaeljames.io
 
 Version: 0.1
 
+Please submit error reports to bugs@michaeljames.io
+
 
 ### Usage
 
@@ -41,7 +43,7 @@ You can call this method on as many objects as you like
 </script>
 ```
 
-Alternitavely you can pass in an array of many objects *however* v0.1 will calculate the colour once from the first item so this should only be used where objects have the same background colour.
+Alternitavely you can use a broad CSS selector and wings.js will calculate the colour and position of each object separately.
 ```html
 <script>
 	jQuery(document).ready(function($) {
@@ -53,5 +55,4 @@ Alternitavely you can pass in an array of many objects *however* v0.1 will calcu
 ```
 
 ### Upcoming Features
-* Calculate colours each time to work better with multiple objects
 * Error Checking
